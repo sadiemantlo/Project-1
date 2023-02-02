@@ -1,6 +1,6 @@
 .cover-body {
-    background-image: url("/assets/images/cover-page-background.jpg");
-    background-size: 100%;
+    background-image: url("https://www.camelbackresort.com/wp-content/uploads/2022/09/Mountain-Winter-1-1024x768.jpeg");
+    background-size: cover;
     background-repeat: no-repeat;
     margin: 0px;
 }
@@ -27,3 +27,51 @@
 
 .cover-instructions {
     border: solid red;
+}
+
+.splash-container {
+    /* background: #1f8dd6; */
+    z-index: 1;
+    overflow: hidden;
+    /* The following styles are required for the "scroll-over" effect */
+    width: 100%;
+    height: 88%;
+    top: 0;
+    left: 0;
+    position: fixed !important;
+}
+
+.splash {
+    /* absolute center .splash within .splash-container */
+    width: 80%;
+    height: 50%;
+    margin: auto;
+    position: absolute;
+    top: 100px; left: 0; bottom: 0; right: 0;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/* This is the main heading that appears on the blue section */
+.splash-head {
+    font-size: 20px;
+    font-weight: bolder;
+    color: rgb(255, 255, 255);
+    border: 3px solid rgb(255, 255, 255);
+    padding: 1em 1.6em;
+    font-weight: 100;
+    border-radius: 5px;
+    line-height: 1em;
+    background-color: rgba(137, 43, 226, 0.43);
+}
+
+/* This is the subheading that appears on the blue section */
+.splash-subhead {
+    color: rgb(255, 255, 255);
+    letter-spacing: 0.05em;
+    opacity: 0.8;
+}
+
+#start-bttn {
+    background-color: blueviolet;
+}
