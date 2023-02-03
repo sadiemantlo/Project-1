@@ -152,6 +152,13 @@ li {
   .information {
     box-sizing: border-box;
     padding: 20px 40px 20px 50px;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    text-overflow: scroll;
+    overflow-x: auto;
+    white-space: nowrap;
   }
+
   
  
