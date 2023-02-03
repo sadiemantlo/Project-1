@@ -24,6 +24,10 @@ h3 {
     height: auto;
 }
 
+#search-bttn {
+    color: #1b6a82;
+}
+
 #layout {
     padding: 0;
 }
