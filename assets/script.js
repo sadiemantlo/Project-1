@@ -5,6 +5,7 @@ var ing2El = document.getElementById('ing2');
 var ing3El = document.getElementById('ing3');
 var instructionsEl = document.getElementById('instructions');
 var imgEl = document.getElementById('img');
+var saveBttn = document.getElementById('save-bttn');
 
 searchBttn.addEventListener('click', function() {
     var getRecipe = 'https://thecocktaildb.com/api/json/v1/1/random.php';
@@ -28,4 +29,17 @@ searchBttn.addEventListener('click', function() {
 
 })
 
-// 'https://thecocktaildb.com/api/json/v1/1/search.php?s=' + userInput.value;
+$(function () {
+    // event listner for save buttons and saving to local storage
+    $('#saveBtn').click(function() {
+      var blockEl = $(this).parent();
+      var savedDrinks = blockEl.children(h1).val();
+      localStorage.setItem('drink-name', savedDrinks);
+    })
+
+  });
+
+//   saveBttn.addEventListener('click', function() {
+//     var savedDrinks = drinkNameEl.textContent
+//     localStorage.setItem('drink-name', savedDrinks)
+//   })
