@@ -2,6 +2,7 @@
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
 }
 
 a {
@@ -34,16 +35,18 @@ h3 {
 }
 
 .sidebar {
-    background: rgb(18, 46, 102);
+    background-image: url('https://www.foodandwine.com/thmb/NudJFXaZpng3_m_YkvMMVI2fyQo=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/kansas-city-cocktails-swordfish-ft-blog0518-d28aeedd84b346dcb6ab54a5f1e7f4bc.jpg');
+    background-position: top;
     color: #fff;
 }
-
+/* rgb(18, 46, 102) */
 .brand-title,
 .brand-tagline {
     margin: 0;
 }
 .brand-title {
     text-transform: uppercase;
+    color: white;
 }
 .brand-tagline {
     font-weight: 300;
@@ -129,17 +132,17 @@ li {
     width: 550px;
     height: 300px;
     margin: 50px auto 0;
-    border: 5px solid #000;
-    background: #1380A1;
+    border: 5px solid rgb(28, 28, 28);
+    background: #1b6a82;
     display: inline-block;
     grid-template-columns: 200px auto;
   }
   
   .profile-pic img {
-    display: inline-block;
-    width: 30px;
+    display: border-box;
+    width: 50px;
     margin: 20px;
-    border: 5px solid #000;
+    border: 5px solid rgb(40, 39, 39);;
   }
   
   .information {
