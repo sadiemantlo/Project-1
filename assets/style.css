@@ -139,8 +139,8 @@ li {
   }
   
   .profile-pic img {
-    display: inline-block;
-    width: 30px;
+    display: border-box;
+    width: 50px;
     margin: 20px;
     border: 5px solid rgb(40, 39, 39);;
   }
