@@ -1,4 +1,14 @@
-// var snowApi = 'https://pro.openweathermap.org/data/2.5/forecast/climate?q=London&appid=3fa1df04242d2493b1bb11f33d5c133f';
-// fetch(snowApi)
-//     .then(response => response.json())
-//     .then(data => { console.log(data)});
+var userInput = document.getElementById('user-input');
+var searchBttn = document.getElementById('search-bttn');
+
+searchBttn.addEventListener('click', function() {
+    var getRecipe = 'https://thecocktaildb.com/api/json/v1/1/random.php';
+        fetch(getRecipe)
+            .then(response => response.json())
+            .then(data => { 
+                console.log(data);
+                 });
+
+})
+
+// 'https://thecocktaildb.com/api/json/v1/1/search.php?s=' + userInput.value;
