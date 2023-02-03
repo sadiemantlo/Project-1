@@ -1,8 +1,12 @@
 .cover-body {
-    background-image: url("https://www.camelbackresort.com/wp-content/uploads/2022/09/Mountain-Winter-1-1024x768.jpeg");
+    background-image: url("https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80");
     background-size: cover;
     background-repeat: no-repeat;
     margin: 0px;
+}
+
+.backgroundImage {
+    width: 100vw;
 }
 
 .cover-header {
@@ -43,7 +47,7 @@
 
 .splash {
     /* absolute center .splash within .splash-container */
-    width: 80%;
+    width: 30%;
     height: 50%;
     margin: auto;
     position: absolute;
@@ -62,7 +66,7 @@
     font-weight: 100;
     border-radius: 5px;
     line-height: 1em;
-    background-color: rgba(137, 43, 226, 0.43);
+    background-color: rgba(61, 37, 83, 0.43);
 }
 
 /* This is the subheading that appears on the blue section */
@@ -73,5 +77,5 @@
 }
 
 #start-bttn {
-    background-color: blueviolet;
+    background-color: rgb(42, 63, 180);
 }
