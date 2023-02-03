@@ -19,27 +19,32 @@ searchBttn.addEventListener('click', function() {
                 var ing3 = data.drinks[0].strIngredient3;
                 var instructions = data.drinks[0].strInstructions;
                 var img = data.drinks[0].strDrinkThumb;
+                var measure1 = data.drinks[0].strMeasure1;
+                var measure2 = data.drinks[0].strMeasure2;
+                var measure3 = data.drinks[0].strMeasure3;
                 drinkNameEl.innerText = drinkName;
-                ing1El.innerText = ing1;
-                ing2El.innerText = ing2;
-                ing3El.innerText = ing3;
+                ing1El.innerText = measure1 + ing1;
+                ing2El.innerText = measure2 + ing2;
+                ing3El.innerText = measure3 + ing3;
                 instructionsEl.innerText = instructions;
                 imgEl.src = img;
                  });
 
 })
 
-$(function () {
-    // event listner for save buttons and saving to local storage
-    $('#saveBtn').click(function() {
-      var blockEl = $(this).parent();
-      var savedDrinks = blockEl.children(h1).val();
-      localStorage.setItem('drink-name', savedDrinks);
-    })
+// $(function () {
+//     // event listner for save buttons and saving to local storage
+//     $('#saveBtn').click(function() {
+//       var blockEl = $(this).parent();
+//       var savedDrinks = blockEl.children(h1).val();
+//       localStorage.setItem('drink-name', savedDrinks);
+//     })
 
-  });
+//   });
 
-//   saveBttn.addEventListener('click', function() {
-//     var savedDrinks = drinkNameEl.textContent
-//     localStorage.setItem('drink-name', savedDrinks)
-//   })
+  saveBttn.addEventListener('click', function() {
+    console.log('clicked');
+    var savedDrinks = drinkNameEl.textContent;
+    console.log(savedDrinks);
+    localStorage.setItem('drink-name', savedDrinks)
+  })
