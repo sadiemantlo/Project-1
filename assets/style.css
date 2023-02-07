@@ -158,7 +158,13 @@ li {
     white-space: nowrap;
   }
 
+
   .block-information p {
     word-wrap: inherit;
   }
  
+.favorite-bttns {
+    display: block;
+    margin: 5px;
+}
+
