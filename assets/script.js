@@ -10,6 +10,7 @@ var saveBttn = document.getElementById('save-bttn');
 var list = document.getElementById('local-storage');
 var information = document.getElementById('information');
 
+// fetching api to randomly generate drinks and display on HTML
 searchBttn.addEventListener('click', function () {
   var getRecipe = 'https://thecocktaildb.com/api/json/v1/1/random.php';
   fetch(getRecipe)
@@ -40,10 +41,9 @@ searchBttn.addEventListener('click', function () {
       }
 
     })
-
 });
 
-
+// save button feature 
 function save(event) {
   event.preventDefault();
   console.log('clicked');
@@ -64,9 +64,9 @@ function save(event) {
 
   }
 }
-
 saveBttn.addEventListener('click', save);
 
+// using localStorage get item to populate favorites list when page is reloaded
 function populateFavoriteList() {
   var drinkHistory = JSON.parse(localStorage.getItem('drink-name')) || []
   var savedDrinks = drinkNameEl.textContent;
@@ -84,6 +84,7 @@ function populateFavoriteList() {
 }
 populateFavoriteList();
 
+// fetching alternate api url to grab data for the favorites list drinks
 function favoriteBttn(event) {
   event.preventDefault();
   console.log(event.target.getAttribute('drink-name'));
