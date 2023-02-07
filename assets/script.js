@@ -36,15 +36,16 @@ searchBttn.addEventListener('click', function () {
           ing4El.innerText = measure4 + ing4;
           instructionsEl.innerText = instructions;
           imgEl.src = img;
-        } 
-      } 
+        }
+      }
 
     })
 
 });
 
-saveBttn.addEventListener('click', save);
-function save() {
+
+function save(event) {
+  event.preventDefault();
   console.log('clicked');
   var drinkHistory = JSON.parse(localStorage.getItem('drink-name')) || []
   var savedDrinks = drinkNameEl.textContent;
@@ -52,5 +53,31 @@ function save() {
   console.log(drinkHistory);
   localStorage.setItem('drink-name', savedDrinks)
   drinkHistory.push(savedDrinks)
-  localStorage.setItem('drink-name', JSON.stringify(drinkHistory))
+  localStorage.setItem('drink-name', JSON.stringify(drinkHistory));
+  list.innerHTML = '';
+  for (i = 0; i <= drinkHistory.length; i++) {
+    var li = document.createElement('li');
+    li.textContent = drinkHistory[i];
+    list.appendChild(li);
+  }
 }
+
+saveBttn.addEventListener('click', save);
+
+function populateFavoriteList() {
+  console.log('clicked');
+  var drinkHistory = JSON.parse(localStorage.getItem('drink-name')) || []
+  var savedDrinks = drinkNameEl.textContent;
+  console.log(savedDrinks);
+  console.log(drinkHistory);
+  localStorage.setItem('drink-name', savedDrinks)
+  drinkHistory.push(savedDrinks)
+  localStorage.setItem('drink-name', JSON.stringify(drinkHistory));
+  list.innerHTML = '';
+  for (i = 0; i <= drinkHistory.length; i++) {
+    var li = document.createElement('li');
+    li.textContent = drinkHistory[i];
+    list.appendChild(li);
+  }
+}
+populateFavoriteList();
