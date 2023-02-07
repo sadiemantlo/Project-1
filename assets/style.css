@@ -3,12 +3,21 @@
     -moz-box-sizing: border-box;
     box-sizing: border-box; 
     font-family: 'Oswald', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
+
+body {
+    background: #c44e00;
+    align-items: center;
+  }
 
 a {
     text-decoration: none;
     color: rgb(61, 146, 201);
 }
+
 a:hover,
 a:focus {
     text-decoration: underline;
@@ -43,19 +52,24 @@ h3 {
     background-position: center;
     background-size: 100%;
     color: #fff;
+    opacity: 75%;
 }
 /* rgb(18, 46, 102) */
 .brand-title,
 .brand-tagline {
     margin: 0;
+    opacity: 100%;
+    text-shadow: 7px 7px 3px black;
 }
+
 .brand-title {
     text-transform: uppercase;
-    color: white;
+    color: #c44e00;
 }
+
 .brand-tagline {
     font-weight: 300;
-    color: rgb(176, 202, 219);
+    color: #c44e00;
 }
 
 
@@ -67,6 +81,30 @@ h3 {
     font-size: 80%;
     font-weight: 500;
     letter-spacing: 0.1em;
+}
+
+.profile-pic img {
+    display: border-box;
+    width: 200px;
+    margin: 20px;
+    border: 5px solid #f8c3a0;
+    box-shadow: #562300 5px 7px 2px;
+
+  }
+
+.container {
+    width: 550px;
+    height: auto;
+    padding: 20px;
+    margin-top: 20px;
+    line-height: 20px;
+    align-items: center;
+    border: 5px solid #eeb792;
+    background: #f48c47;
+    display: inline-block;
+    grid-template-columns: 200px auto;
+    box-shadow: #562300 5px 7px 2px;
+    text-shadow: 2px 2px 2px #803300;
 }
 
 .content {
@@ -104,54 +142,30 @@ li {
 }
 
 
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
   
-  
-  body {
+/* body {
     background: #c44e00;
     align-items: center;
-  }
+  } */
   
-  h1 {
+h1 {
     margin:40px 0 0;
     font-size: 40px;
   }
   
-  p.expertise {
+p.expertise {
     padding-bottom: 10px;
     margin-bottom: 10px;
     font-weight: bold;
     font-size: 24px;
   }
   
-   .container {
-    width: 550px;
-    height: auto;
-    padding: 20px;
-    line-height: 20px;
-    align-items: center;
-    border: 5px solid #eeb792;
-    background: #f48c47;
-    display: inline-block;
-    grid-template-columns: 200px auto;
-  } 
-
-  #drink-name {
+#drink-name {
     margin-bottom: 25px;
   }
 
 
   
-  .profile-pic img {
-    display: border-box;
-    width: 200px;
-    margin: 20px;
-    border: 5px solid #f8c3a0;;
-  }
   
 
   
