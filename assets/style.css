@@ -159,4 +159,8 @@ li {
     overflow-x: auto;
     white-space: nowrap;
   }
- 
+
+.favorite-bttns {
+    display: block;
+    margin: 5px;
+}

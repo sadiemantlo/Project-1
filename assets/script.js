@@ -58,7 +58,8 @@ function save(event) {
   for (i = 0; i < drinkHistory.length; i++) {
     var button = document.createElement('button');
     button.textContent = drinkHistory[i];
-    button.setAttribute('drink-name', drinkHistory[i].replaceAll(" ", "_"))
+    button.setAttribute('drink-name', drinkHistory[i].replaceAll(" ", "_"));
+    button.classList.add('favorite-bttns');
     list.appendChild(button);
 
   }
