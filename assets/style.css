@@ -11,7 +11,47 @@
 body {
     background: #c44e00;
     align-items: center;
+}
+
+  #layout {
+    padding: 0;
+}
+
+.sidebar {
+    background-image: url('https://www.cheapflights.com/news/wp-content/uploads/sites/136/2015/10/theme_liquor_alcohol_bottle-shutterstock-portfolio_703929226-scaled.jpg');
+    background-position: center;
+    background-size: 100%;
+    color: #fff;
+    opacity: 75%;
+}
+
+.header {
+    text-align: center;
+    top: auto;
+    margin: 3em auto;
+}
+
+h1 {
+    margin:40px 0 0;
+    font-size: 40px;
   }
+
+.brand-title,
+.brand-tagline {
+      margin: 0;
+      opacity: 100%;
+      text-shadow: 7px 7px 3px black;
+}
+  
+.brand-title {
+      text-transform: uppercase;
+      color: #c44e00;
+}
+  
+.brand-tagline {
+      font-weight: 300;
+      color: #c44e00;
+}
 
 a {
     text-decoration: none;
@@ -23,64 +63,23 @@ a:focus {
     text-decoration: underline;
 }
 
-h3 {
+/* h3 {
     font-weight: 100;
-}
+} */
 
 /* LAYOUT CSS */
-.pure-img-responsive {
+/* .pure-img-responsive {
     max-width: 100%;
     height: auto;
+} */
+
+li {
+    list-style-type: none;
+    padding: 8px;
 }
 
 #search-bttn {
     color: #1b6a82;
-}
-
-#layout {
-    padding: 0;
-}
-
-.header {
-    text-align: center;
-    top: auto;
-    margin: 3em auto;
-}
-
-.sidebar {
-    background-image: url('https://www.cheapflights.com/news/wp-content/uploads/sites/136/2015/10/theme_liquor_alcohol_bottle-shutterstock-portfolio_703929226-scaled.jpg');
-    background-position: center;
-    background-size: 100%;
-    color: #fff;
-    opacity: 75%;
-}
-/* rgb(18, 46, 102) */
-.brand-title,
-.brand-tagline {
-    margin: 0;
-    opacity: 100%;
-    text-shadow: 7px 7px 3px black;
-}
-
-.brand-title {
-    text-transform: uppercase;
-    color: #c44e00;
-}
-
-.brand-tagline {
-    font-weight: 300;
-    color: #c44e00;
-}
-
-
-.content-subhead {
-    text-transform: uppercase;
-    color: #aaa;
-    border-bottom: 1px solid #eee;
-    padding: 0.4em 0;
-    font-size: 80%;
-    font-weight: 500;
-    letter-spacing: 0.1em;
 }
 
 .profile-pic img {
@@ -89,10 +88,13 @@ h3 {
     margin: 20px;
     border: 5px solid #f8c3a0;
     box-shadow: #562300 5px 7px 2px;
-
-  }
+}
 
 .container {
+    /* top: 50%;
+    left: 50%;
+    position: fixed; */
+    /* Ask tutor about above content and centering this container in the middle of the webpage. */
     width: 550px;
     height: auto;
     padding: 20px;
@@ -104,15 +106,36 @@ h3 {
     display: inline-block;
     grid-template-columns: 200px auto;
     box-shadow: #562300 5px 7px 2px;
+    
+}
+
+#drink-name {
+    margin-bottom: 25px;
     text-shadow: 2px 2px 2px #803300;
+  }
+
+  #save-bttn {
+    color: #1b6a82;
+    margin-top: 10px;
 }
 
 .content {
     padding: 2em 1em 0;
 }
 
+.content-subhead {
+    text-transform: uppercase;
+    color: #aaa;
+    border-bottom: 1px solid #eee;
+    padding: 0.4em 0;
+    font-size: 80%;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+}
 
-.post-images {
+/* Everything above has been placed into order, everything below still needs to be gone through.  */
+
+/* .post-images {
     margin: 1em 0;
 }
 .post-image-meta {
@@ -120,26 +143,18 @@ h3 {
     margin-left: 1em;
     color: #fff;
     text-shadow: 0 1px 1px #333;
-}
+} */
 
-#save-bttn {
-    color: #1b6a82;
-    margin-top: 10px;
-}
 
-.footer {
+
+/* .footer {
     padding: 1em 0;
 }
 .footer a {
     color: #ccc;
     font-size: 80%;
-}
+} */
 
-
-li {
-    list-style-type: none;
-    padding: 8px;
-}
 
 
   
@@ -148,21 +163,15 @@ li {
     align-items: center;
   } */
   
-h1 {
-    margin:40px 0 0;
-    font-size: 40px;
-  }
   
-p.expertise {
+/* p.expertise {
     padding-bottom: 10px;
     margin-bottom: 10px;
     font-weight: bold;
     font-size: 24px;
-  }
+  } */
   
-#drink-name {
-    margin-bottom: 25px;
-  }
+
 
 
   
