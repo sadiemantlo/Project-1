@@ -37,18 +37,20 @@ searchBttn.addEventListener('click', function () {
           instructionsEl.innerText = instructions;
           imgEl.src = img;
         } 
-      }
+      } 
 
     })
 
 });
 
-
+saveBttn.addEventListener('click', save);
 function save() {
   console.log('clicked');
   var drinkHistory = JSON.parse(localStorage.getItem('drink-name')) || []
   var savedDrinks = drinkNameEl.textContent;
+  console.log(savedDrinks);
+  console.log(drinkHistory);
+  localStorage.setItem('drink-name', savedDrinks)
   drinkHistory.push(savedDrinks)
   localStorage.setItem('drink-name', JSON.stringify(drinkHistory))
 }
-saveBttn.addEventListener('click', save);
