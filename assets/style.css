@@ -1,7 +1,7 @@
 * {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
-    box-sizing: border-box;
+    box-sizing: border-box; 
     font-family: 'Oswald', sans-serif;
 }
 
@@ -39,8 +39,9 @@ h3 {
 }
 
 .sidebar {
-    background-image: url('https://www.foodandwine.com/thmb/NudJFXaZpng3_m_YkvMMVI2fyQo=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/kansas-city-cocktails-swordfish-ft-blog0518-d28aeedd84b346dcb6ab54a5f1e7f4bc.jpg');
-    background-position: top;
+    background-image: url('https://www.cheapflights.com/news/wp-content/uploads/sites/136/2015/10/theme_liquor_alcohol_bottle-shutterstock-portfolio_703929226-scaled.jpg');
+    background-position: center;
+    background-size: 100%;
     color: #fff;
 }
 /* rgb(18, 46, 102) */
@@ -104,24 +105,13 @@ li {
 
 * {
     box-sizing: border-box;
-  }
-  
-  body {
-    background: #f1f1f1;
-    margin: 2rem;
-  }
-  
-
-
-
-  * {
     margin: 0;
     padding: 0;
   }
   
+  
   body {
-    background: #9a3e00;
-    color: #fff;
+    background: #c44e00;
   }
   
   h1 {
@@ -136,7 +126,7 @@ li {
     font-size: 24px;
   }
   
-  .container {
+   .container {
     width: 550px;
     height: 300px;
     margin: 50px auto 0;
@@ -144,7 +134,8 @@ li {
     background: #f48c47;
     display: inline-block;
     grid-template-columns: 200px auto;
-  }
+  } 
+
   
   .profile-pic img {
     display: border-box;
@@ -153,14 +144,21 @@ li {
     border: 5px solid #f8c3a0;;
   }
   
-  .information {
-    box-sizing: border-box;
+
+  .block-information {
+    display: inline-block;
+    /* box-sizing: border-box; */
     padding: 20px 40px 20px 50px;
     justify-content: center;
     align-items: center;
     text-align: left;
-    text-overflow: scroll;
-    overflow-x: auto;
+    border: solid red;
+    text-overflow: scroll; 
+    overflow-x: auto; 
     white-space: nowrap;
+  }
+
+  .block-information p {
+    word-wrap: inherit;
   }
  
