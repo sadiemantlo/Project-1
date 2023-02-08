@@ -82,6 +82,14 @@ li {
     color: #1b6a82;
 }
 
+#drink-boxes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
 .profile-pic img {
     display: border-box;
     width: 200px;
