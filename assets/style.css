@@ -45,12 +45,12 @@ h1 {
   
 .brand-title {
       text-transform: uppercase;
-      color: #c44e00;
+      color: #ec5f00;
 }
   
 .brand-tagline {
       font-weight: 300;
-      color: #c44e00;
+      color: #ec5f00;
 }
 
 a {
@@ -62,16 +62,6 @@ a:hover,
 a:focus {
     text-decoration: underline;
 }
-
-/* h3 {
-    font-weight: 100;
-} */
-
-/* LAYOUT CSS */
-/* .pure-img-responsive {
-    max-width: 100%;
-    height: auto;
-} */
 
 li {
     list-style-type: none;
@@ -179,19 +169,6 @@ li {
     font-size: 24px;
   } */
   
-
-
-
-  
-  
-
-  
-
-
-
-  .block-information p {
-    word-wrap: inherit;
-  }
  
 .favorite-bttns {
     display: block;
