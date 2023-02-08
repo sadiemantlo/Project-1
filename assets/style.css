@@ -29,6 +29,16 @@ body {
     text-align: center;
     top: auto;
     margin: 3em auto;
+    font-size: 20px;
+    font-weight: bolder;
+    color: rgb(255, 255, 255);
+    border: 3px solid rgb(255, 255, 255);
+    padding: 1em 1.6em;
+    font-weight: 100;
+    border-radius: 5px;
+    line-height: 1em;
+    background-color: #c44e0082;
+    width: 50%;
 }
 
 h1 {
@@ -38,19 +48,20 @@ h1 {
 
 .brand-title,
 .brand-tagline {
-      margin: 0;
+      margin: 20px;
       opacity: 100%;
       text-shadow: 7px 7px 3px black;
 }
   
 .brand-title {
       text-transform: uppercase;
-      color: #ec5f00;
+      color: white;
 }
   
 .brand-tagline {
       font-weight: 300;
-      color: #ec5f00;
+      color: white;
+
 }
 
 a {
