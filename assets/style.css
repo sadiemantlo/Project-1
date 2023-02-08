@@ -3,39 +3,18 @@
     -moz-box-sizing: border-box;
     box-sizing: border-box; 
     font-family: 'Oswald', sans-serif;
-}
-
-a {
-    text-decoration: none;
-    color: rgb(61, 146, 201);
-}
-a:hover,
-a:focus {
-    text-decoration: underline;
-}
-
-h3 {
-    font-weight: 100;
-}
-
-/* LAYOUT CSS */
-.pure-img-responsive {
-    max-width: 100%;
-    height: auto;
-}
-
-#search-bttn {
-    color: #1b6a82;
-}
-
-#layout {
+    box-sizing: border-box;
+    margin: 0;
     padding: 0;
 }
 
-.header {
-    text-align: center;
-    top: auto;
-    margin: 3em auto;
+body {
+    background: #c44e00;
+    align-items: center;
+}
+
+  #layout {
+    padding: 0;
 }
 
 .sidebar {
@@ -43,21 +22,115 @@ h3 {
     background-position: center;
     background-size: 100%;
     color: #fff;
-}
-/* rgb(18, 46, 102) */
-.brand-title,
-.brand-tagline {
-    margin: 0;
-}
-.brand-title {
-    text-transform: uppercase;
-    color: white;
-}
-.brand-tagline {
-    font-weight: 300;
-    color: rgb(176, 202, 219);
+    opacity: 75%;
 }
 
+.header {
+    text-align: center;
+    top: auto;
+    margin: 3em auto;
+    font-size: 20px;
+    font-weight: bolder;
+    color: rgb(255, 255, 255);
+    border: 3px solid rgb(255, 255, 255);
+    padding: 1em 1.6em;
+    font-weight: 100;
+    border-radius: 5px;
+    line-height: 1em;
+    background-color: #c44e0082;
+    width: 50%;
+}
+
+h1 {
+    margin:40px 0 0;
+    font-size: 40px;
+  }
+
+.brand-title,
+.brand-tagline {
+      margin: 20px;
+      opacity: 100%;
+      text-shadow: 7px 7px 3px black;
+}
+  
+.brand-title {
+      text-transform: uppercase;
+      color: white;
+}
+  
+.brand-tagline {
+      font-weight: 300;
+      color: white;
+
+}
+
+a {
+    text-decoration: none;
+    color: rgb(61, 146, 201);
+}
+
+a:hover,
+a:focus {
+    text-decoration: underline;
+}
+
+li {
+    list-style-type: none;
+    padding: 8px;
+}
+
+#search-bttn {
+    color: #1b6a82;
+}
+
+#drink-boxes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.profile-pic img {
+    display: border-box;
+    width: 200px;
+    margin: 20px;
+    border: 5px solid #f8c3a0;
+    box-shadow: #562300 5px 7px 2px;
+}
+
+.container {
+    /* top: 50%;
+    left: 50%;
+    position: fixed; */
+    /* Ask tutor about above content and centering this container in the middle of the webpage. */
+    width: 550px;
+    height: auto;
+    padding: 20px;
+    margin-top: 20px;
+    line-height: 20px;
+    align-items: center;
+    border: 5px solid #eeb792;
+    background: #f48c47;
+    display: inline-block;
+    grid-template-columns: 200px auto;
+    box-shadow: #562300 5px 7px 2px;
+    
+}
+
+#drink-name {
+    margin-bottom: 25px;
+    text-shadow: 2px 2px 2px #803300;
+  }
+
+  #save-bttn {
+    color: #1b6a82;
+    margin-top: 10px;
+}
+
+.content {
+    padding: 2em 1em 0;
+}
 
 .content-subhead {
     text-transform: uppercase;
@@ -69,12 +142,9 @@ h3 {
     letter-spacing: 0.1em;
 }
 
-.content {
-    padding: 2em 1em 0;
-}
+/* Everything above has been placed into order, everything below still needs to be gone through.  */
 
-
-.post-images {
+/* .post-images {
     margin: 1em 0;
 }
 .post-image-meta {
@@ -82,85 +152,34 @@ h3 {
     margin-left: 1em;
     color: #fff;
     text-shadow: 0 1px 1px #333;
-}
+} */
 
-#save-bttn {
-    color: #1b6a82;
-    margin-top: 10px;
-}
 
-.footer {
+
+/* .footer {
     padding: 1em 0;
 }
 .footer a {
     color: #ccc;
     font-size: 80%;
-}
+} */
 
 
-li {
-    list-style-type: none;
-    padding: 8px;
-}
 
-
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
   
-  
-  body {
+/* body {
     background: #c44e00;
     align-items: center;
-  }
+  } */
   
-  h1 {
-    margin:40px 0 0;
-    font-size: 40px;
-  }
   
-  p.expertise {
+/* p.expertise {
     padding-bottom: 10px;
     margin-bottom: 10px;
     font-weight: bold;
     font-size: 24px;
-  }
+  } */
   
-   .container {
-    width: 550px;
-    height: auto;
-    padding: 20px;
-    line-height: 20px;
-    align-items: center;
-    border: 5px solid #eeb792;
-    background: #f48c47;
-    display: inline-block;
-    grid-template-columns: 200px auto;
-  } 
-
-  #drink-name {
-    margin-bottom: 25px;
-  }
-
-
-  
-  .profile-pic img {
-    display: border-box;
-    width: 200px;
-    margin: 20px;
-    border: 5px solid #f8c3a0;;
-  }
-  
-
-  
-
-
-
-  .block-information p {
-    word-wrap: inherit;
-  }
  
 .favorite-bttns {
     display: block;
