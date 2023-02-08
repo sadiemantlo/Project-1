@@ -14,6 +14,6 @@ Two APIs were used to create this application. 'Unsplash' API was used to random
 ## **Usage**
 
 To use the drink generator, users just click the 'get started' button which then will take them to a new page that has the 'generate' drink button. Users can generate as many drinks as they want and click the 'save' button to add any drink to their favorites list.
->### To view the depolyed site click [here]()
+>### To view the depolyed site click [here](https://sadiemantlo.github.io/Project-1/)
 
-![Deployed site screenshot]()
+![Deployed site screenshot](./images/deployed-site.png)
